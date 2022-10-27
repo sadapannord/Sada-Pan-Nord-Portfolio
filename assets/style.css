@@ -59,6 +59,22 @@ header h1 .pic {
     margin-right: 1%;
     box-shadow: 5px 5px 10px rebeccapurple;
 }
+
+#portfolio-pic {
+    width: 15%;
+    max-width: 30%;
+    position: relative;
+}
+.image-title {
+    position: absolute;
+    background-color: pink ;
+    top: 17px;
+    left: 50px;
+}
+
+div ul li {
+
+}
 @media screen and (max-width: 900px) {
     body {
         font-family: 'Times New Roman', Times, serif;
@@ -67,7 +83,7 @@ header h1 .pic {
    
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
         font-family: sans-serif;
     }
