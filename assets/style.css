@@ -1,0 +1,77 @@
+* {
+    margin: .5%;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+  }
+
+  h1 {
+    font-size: 5em;
+    color: blanchedalmond;
+  }
+h2 {
+    font-size: 3em;
+    color: blanchedalmond;
+
+}
+
+h3 {
+    font-size: 2em;
+}
+  
+  input, select, option, optgroup, textarea, button,
+  pre, code {
+    font-size: 100%;
+    font-family: inherit;
+  }
+header {
+    background-color: teal;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+    background-color: teal;
+    font-size: 1.75em;
+    color: white;
+
+
+}
+
+header h1 .pic {
+    border-radius: 7%;
+    float: right;
+    width: 15%;
+    max-width: 145px;
+    min-width: 98px;
+    margin-right: 1%;
+    box-shadow: 5px 5px 10px rebeccapurple;
+}
+@media screen and (max-width: 900px) {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: .75em;
+    }
+   
+    }
+
+@media screen and (max-width: 600px) {
+    body {
+        font-family: sans-serif;
+    }
+    header {
+        text-align: left;
+    }
+}
