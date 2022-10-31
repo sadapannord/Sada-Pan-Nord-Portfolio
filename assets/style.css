@@ -2,7 +2,7 @@
     margin: .5%;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   html {
@@ -59,26 +59,41 @@ header h1 .pic {
     margin-right: 1%;
     box-shadow: 5px 5px 10px rebeccapurple;
 }
+img {
+    width: 15%;
+    flex-grow: 1;
+}
 
 #portfolio-pic {
-    width: 15%;
-    max-width: 30%;
+    display: flex;
+    width: 20%;
     position: relative;
+    flex-grow: 30em;
+
 }
+
 .image-title {
-    position: absolute;
+    position: relative;
     background-color: pink ;
-    top: 17px;
-    left: 50px;
+    width: 15%;
 }
 
 div ul li {
 
 }
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
 @media screen and (max-width: 900px) {
     body {
         font-family: 'Times New Roman', Times, serif;
-        font-size: .75em;
+        font-size: .5rem;
     }
    
     }
