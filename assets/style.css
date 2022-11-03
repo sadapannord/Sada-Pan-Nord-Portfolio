@@ -73,6 +73,7 @@ img {
 aside {
     min-width: 250px;
     max-width: 250px;
+    height: 200px;
     align-items: center;
     border-right: 5px solid orange;
     margin: 2px;
