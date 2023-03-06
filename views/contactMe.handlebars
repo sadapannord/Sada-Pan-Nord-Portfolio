@@ -1,37 +1,53 @@
 <div class="col-md-6">
-    <h2>If you have visited my portfolio please sign my visitors log!</h2>
+    <div class="section-container">
+        <aside>
+            <h3 id="contact-information">Contact Information</h3>
+        </aside>
+        <div>
+        <p class="row"><strong>Email:</strong>sadapan@gmail.com</p>
+        <p class="row"><strong>Phone number:</strong>303-332-7351</p>
+        <p class="row"><strong>GitHub:</strong><a href="https://github.com/sadapannord" target ="blank">https://www.github.com/sadapannord</a></p>
+        <p class="row"><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/sada-pan-nord-021160198" target="_blank">www.linkedin.com/in/sada-pan-nord-021160198</a></p>
+        </div>
+
+        </div>
+    <h2>If you have enjoyed my portfolio please sign my visitors log</h2>
 
     <form class="form visitorLog">
       <div class="form-group">
-        <label for="firstName">First Name:</label>
+        {{!-- <p>First Name:</p> --}}
         <input
           class="form-input firstName"
           type="text"
           id="firstName"
+          placeholder="First Name"
         />
       </div>
       <div class="form-group">
-        <p>Last Name:</p>
+        {{!-- <p>Last Name:</p> --}}
         <input
           class="form-input lastName"
           type="text"
           id="lastName"
+          placeholder="Last Name"
         />
       </div>
         <div class="form-group">
-        <p>Company:</p>
+        {{!-- <p>Company:</p> --}}
         <input
           class="form-input company"
           type="text"
           id="company"
+          placeholder="Company"
         />
       </div>
         <div class="form-group">
-        <p>Contact Email:</p>
+        {{!-- <p>Contact Email:</p> --}}
         <input
           class="form-input email"
           type="text"
           id="email"
+          placeholder="email"
         />
       </div>      
       <div class="form-group">
@@ -40,3 +56,4 @@
     </form>
   </div>
 </div>
+<script src="./js/visitor.js"></script>

@@ -7,7 +7,7 @@ const visitorHandler = async (event) => {
   const email = document.getElementById("email").value;
   console.log(firstName, lastName, company, email);
   if (firstName && lastName && company && email) {
-    const response = await fetch("/contactMe", {
+    const response = await fetch("/api/contactMe", {
       method: "POST",
       body: JSON.stringify({ firstName, lastName, company, email }),
       headers: { "Content-Type": "application/json" },
@@ -19,7 +19,7 @@ const visitorHandler = async (event) => {
       alert(response.statusText);
     }
   }
-  console.log();
+  console.log("fetch it failed");
 };
 
 document

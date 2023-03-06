@@ -1,12 +1,12 @@
 const { Model } = require("sequelize");
-const { User } = require("../User");
+const { User } = require("../../models/User");
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
   res.render("contactMe");
 });
 
-router.post("/contactMe", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
     req.session.save(() => {

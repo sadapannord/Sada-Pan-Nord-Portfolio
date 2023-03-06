@@ -13,6 +13,7 @@ body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -24,9 +25,17 @@ h2 {
     color: blanchedalmond;
 
 }
+.visitorLog {
+    background-color: peachpuff;
+}
+::placeholder{
+    color: black;
+    opacity: 1;
+}
 
 h3 {
     font-size: 2em;
+    background-color: white;
 }
 
 header {
@@ -34,16 +43,6 @@ header {
     text-align: center;
 }
 
- /* nav ul li {
-    display: inline;
-    list-style: none;
-    padding-right: 20px;
-    background-color: teal;
-    font-size: 1.75em;
-    color: white;
-
-
-} */
 
 header h1 .pic {
     border-radius: 7%;
@@ -91,6 +90,7 @@ div {
     display: block;
 }
 div p {
+    background-color: white;
     display: block;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
