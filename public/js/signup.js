@@ -1,20 +1,20 @@
-const signupFormHandler = async (event) => {
+const visitorHandler = async (event) => {
   event.preventDefault();
 
-  const username = document.querySelector("#username-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
-  const allergies = document.getElementById("allergy-signup").value;
-  const diet = document.getElementById("diet-signup").value;
-  console.log(username, password, allergies, diet);
-  if (username && password && allergies && diet) {
-    const response = await fetch("/api/users", {
+  const firstName = document.querySelector("#firstName").value.trim();
+  const lastName = document.querySelector("#lastName").value.trim();
+  const company = document.getElementById("company").value;
+  const email = document.getElementById("email").value;
+  console.log(firstName, lastName, company, email);
+  if (firstName && lastName && company && email) {
+    const response = await fetch("/contactMe", {
       method: "POST",
-      body: JSON.stringify({ username, password, allergies, diet }),
+      body: JSON.stringify({ firstName, lastName, company, email }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
-      document.location.replace("userRestrictions/");
+      console.log("testing");
     } else {
       alert(response.statusText);
     }
@@ -23,5 +23,5 @@ const signupFormHandler = async (event) => {
 };
 
 document
-  .querySelector(".signup-form")
-  .addEventListener("submit", signupFormHandler);
+  .querySelector(".visitorLog")
+  .addEventListener("submit", visitorHandler);
