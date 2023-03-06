@@ -24,11 +24,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    contactEmail: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
+    contact:{
+      
+    }
   },
   {
     sequelize,

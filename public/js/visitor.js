@@ -12,14 +12,12 @@ const visitorHandler = async (event) => {
       body: JSON.stringify({ firstName, lastName, company, email }),
       headers: { "Content-Type": "application/json" },
     });
-
     if (response.ok) {
-      console.log("testing");
+      alert("Thank you for signing my visitor log");
     } else {
       alert(response.statusText);
     }
   }
-  console.log("fetch it failed");
 };
 
 document

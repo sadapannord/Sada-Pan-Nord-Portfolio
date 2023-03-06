@@ -28,7 +28,7 @@ h2 {
 .visitorLog {
     background-color: peachpuff;
 }
-::placeholder{
+.form-input{
     color: black;
     opacity: 1;
 }
