@@ -17,11 +17,12 @@ body {
 }
 
 .nameAndPic{
-    background-color: aquamarine;
+    background-color: hsla(160, 85%, 49%, 0.2);
 
-    z-index: 1;
+    position: relative;
     
 }
+
 h1 {
     font-size: 5em;
     color: black;
@@ -103,6 +104,7 @@ div p {
     display: block;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
+    font-size: larger;
 }
 .image-title {
     background-color: pink ;
@@ -129,7 +131,7 @@ div p {
 @media screen and (max-width: 900px) {
     body {
         font-family: 'Times New Roman', Times, serif;
-        font-size: .5rem;
+        font-size: 1rem;
     }
    
     }
